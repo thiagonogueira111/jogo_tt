@@ -11,7 +11,7 @@ public class FinishLineScript : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Debug.Log("VITÓRIA 2D! O jogador cruzou a linha!");
+            Debug.Log("PARABÉNS, VOCÊ VENCEU!");
             levelFinished = true;
             // Adicione sua lógica de vitória aqui (mostrar UI, parar tempo, etc.)
         }
