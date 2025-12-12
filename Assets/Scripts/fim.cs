@@ -2,18 +2,39 @@ using UnityEngine;
 
 public class FinishLineScript : MonoBehaviour
 {
+    [Header("Configurações da UI")]
+    public GameObject telaVitoriaUI; // Arraste o Painel 'TelaVitoria' aqui
+
     private bool levelFinished = false;
 
-    // Note o "2D" no final do nome da função e no tipo do parâmetro
+    // Se seu jogo for 3D use OnTriggerEnter. Se for 2D, use OnTriggerEnter2D
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (levelFinished) return;
 
         if (other.CompareTag("Player"))
         {
-            Debug.Log("PARABÉNS, VOCÊ VENCEU!");
             levelFinished = true;
-            // Adicione sua lógica de vitória aqui (mostrar UI, parar tempo, etc.)
+            TerminarJogo();
         }
+    }
+
+    
+    void TerminarJogo()
+    {
+        Debug.Log("Vitória!");
+
+        // 1. Ativa a tela de vitória que estava escondida
+        if(telaVitoriaUI != null)
+        {
+            telaVitoriaUI.SetActive(true);
+        }
+
+        // 2. Pausa o jogo (O tempo para de passar)
+        Time.timeScale = 0f; 
+        
+        // Opcional: Destravar o mouse se for um jogo de FPS
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
