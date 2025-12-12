@@ -637,6 +637,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 842868303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &266934984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+  m_PrefabInstance: {fileID: 1746296335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &266934988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266934984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d6efd0d0681446ac03d03d3786976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaTemporaria
+  tempoParaSumir: 0.3
 --- !u!1 &295566415
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -857,7 +879,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 557423572}
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
 --- !u!1001 &311935696
 PrefabInstance:
@@ -950,11 +975,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 58.436268
+      value: 20.30548
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.724581
+      value: 8.125244
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalScale.z
@@ -962,11 +987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 73.9387
+      value: 74.1558
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9
+      value: -2.2819
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1000,21 +1025,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4038438519967678984, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_Size.x
+      value: 2.9135294
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038438519967678984, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_Size.y
+      value: 0.63121355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038438519967678984, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.016035318
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038438519967678984, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18439323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038438519967678984, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038438519967678984, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Name
       value: Floor (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3991752001248089607, guid: d172fd25b2803f44791ff0a78ae52d25, type: 3}
+    - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1269,6 +1322,42 @@ MonoBehaviour:
   smoothTimeX: 0.3
   smoothTimeY: 0
   offset: {x: 0, y: 2, z: -10}
+--- !u!1 &557423568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+  m_PrefabInstance: {fileID: 306766989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &557423572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557423568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d6efd0d0681446ac03d03d3786976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaTemporaria
+  tempoParaSumir: 0.3
+--- !u!1 &614571411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+  m_PrefabInstance: {fileID: 1681630134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &614571415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614571411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d6efd0d0681446ac03d03d3786976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaTemporaria
+  tempoParaSumir: 0.3
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1677,7 +1770,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1713733582}
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
 --- !u!1001 &696366530
 PrefabInstance:
@@ -1930,6 +2026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1949,7 +2049,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666837657}
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
 --- !u!1 &842868301
 GameObject:
@@ -2155,6 +2258,24 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 416888138}
+--- !u!1 &858179451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+  m_PrefabInstance: {fileID: 1935176822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &858179455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858179451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d6efd0d0681446ac03d03d3786976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaTemporaria
+  tempoParaSumir: 0.3
 --- !u!1001 &1057372885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2441,8 +2562,8 @@ Transform:
   m_GameObject: {fileID: 1242676989}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5325, y: 3.138, z: 10}
-  m_LocalScale: {x: -2.8083644, y: 3.486939, z: 1}
+  m_LocalPosition: {x: 1.7877, y: 3.138, z: 10}
+  m_LocalScale: {x: -3.0243275, y: 3.486939, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -2638,6 +2759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2657,7 +2782,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1514927702}
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
 --- !u!1 &1404818188
 GameObject:
@@ -2749,6 +2877,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1514927698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+  m_PrefabInstance: {fileID: 1322586570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1514927702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514927698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d6efd0d0681446ac03d03d3786976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaTemporaria
+  tempoParaSumir: 0.3
 --- !u!1 &1531343600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,6 +3080,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+--- !u!1 &1666837653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+  m_PrefabInstance: {fileID: 805540810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666837657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666837653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d6efd0d0681446ac03d03d3786976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaTemporaria
+  tempoParaSumir: 0.3
 --- !u!1 &1680115422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,6 +3217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3072,7 +3240,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 614571415}
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
 --- !u!1 &1698117067
 GameObject:
@@ -3238,6 +3409,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d2b720905ced7b489e56bd6086619fe, type: 3}
+--- !u!1 &1713733578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+  m_PrefabInstance: {fileID: 688174479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1713733582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713733578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d6efd0d0681446ac03d03d3786976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaTemporaria
+  tempoParaSumir: 0.3
 --- !u!1001 &1746296335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3326,6 +3515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3345,7 +3538,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 266934988}
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
 --- !u!1001 &1775172165
 PrefabInstance:
@@ -3967,6 +4163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3986,7 +4186,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323089955938452542, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 858179455}
   m_SourcePrefab: {fileID: 100100000, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
 --- !u!1001 &1007418687768051624
 PrefabInstance:
@@ -4091,7 +4294,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 61.06831
+      value: 70.63161
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalScale.y
@@ -4103,7 +4306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.9423
+      value: 4.161
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4154,16 +4357,20 @@ PrefabInstance:
       value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3991752001248089607, guid: d172fd25b2803f44791ff0a78ae52d25, type: 3}
+    - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6170311720744780783, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
